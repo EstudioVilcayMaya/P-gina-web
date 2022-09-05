@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Favicon (Icon Tab) -->
+    <link rel="icon" href="../resources/svg/logo-small.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/header-footer.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+
+    <!-- Scripts -->
+    <script defer src="../scripts/index.js"></script>
+    
+    <title>Vilca & Maya</title>
+</head>
+<body>
+    <header class="header" data-page="contact">
+        
+		<nav class="navigation">
+            <a href="../index.html">
+                <div class="brand-container">
+                    <img class="logo" src="../resources/svg/logo-small.svg" alt="" />
+                    <div class="brand">
+                        <h1 class="brand--title">VILCA & MAYA</h1>
+                        <p class="brand--subtitle">Estudio contable y administrativo</p>
+                    </div>
+                </div>
+            </a>
+			<div class="div--menu-burguer-container" id="menu-containenr">
+				<img id="button-menu" src="../resources/svg/menu-burger.svg" alt="" />
+				<div class="div-menu-burguer" id="burguer-menu" style="visibility:hidden; opacity: 0; transition:all 300ms ease-in-out;">
+					<a href="../index.html">home</a>
+					<a href="./service.html">servicios</a>
+					<a href="./contact.html">contacto</a>
+				</div>
+			</div>
+            <div class="div--menu-burguer-container-desktop">
+					<a class="a--menu" href="../index.html">Home</a>
+					<a class="a--menu" href="./service.html">Servicios</a>
+					<a class="a--menu" href="./contact.html">Contacto</a>
+				</div>
+			</div>
+		</nav>
+
+
+
+        <div class="header--bottom-container">
+            <picture>
+                <source srcset="../resources/img/contact-img--desktop.png" media="(min-width: 1000px)">
+                <source srcset="../resources/img/contact-img--tablet.png" media="(min-width: 500px)">
+                <img src="../resources/img/contact-img.png" alt="">
+            </picture>
+            
+            <div class="container--background">
+                <p class="background--text">Contáctanos</p>
+            </div>
+
+            <div class="desktop--logo">
+                <img src="../resources/svg/logo--color--desktop.svg" alt="">
+            </div>
+
+            <div class="shadow"></div>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+        <form class="form" action="https://formsubmit.co/estudiovv2312@gmail.com" method="POST">
+
+            <label for="get-name">Nombre:</label>
+            <input 
+                id="get-name" 
+                type="text" 
+                placeholder="Ingresar Nombre"
+                required
+                class="input input--text"
+            >
+
+            <label for="get-email">E-mail:</label>
+            <input 
+                id="get-email" 
+                type="email" 
+                placeholder="Ingresar E-mail"
+                required
+                class="input input--text"
+            >
+
+            <label for="get-phone">Teléfono (opcional):</label>
+            <input 
+                id="get-phone" 
+                type="tel" 
+                placeholder="Ingresar Teléfono"
+                class="input input--text"
+            >
+
+            <label for="get-msg">Tu consulta:</label>
+            <textarea 
+                placeholder="Ingresar Consulta"
+                id="get-msg" 
+                cols="30" 
+                rows="10" 
+                class="input textarea"
+                required
+            ></textarea>
+            <button type="submit" class="button">Enviar</button>
+
+            <input type="hidden" name="_next" value="../pages/form-sended.html">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+
+
+    </main>
+
+
+
+
+    <footer class="footer">
+        <div class="background">
+            <div class="footer--container">
+                <div class="logo--container">
+                    <img class="logo" src="../resources/svg/logo-big.svg" alt="" />
+                </div>
+                <h3>Contacto</h3>
+                <ul role="list">
+                    <li class="email">E-mail:</liclass>
+                    <li class="data">estudiovv2312@gmail.com</li>
+                    <li class="phone">Teléfonos:</li>
+                    <li class="data mobile">2612412438</li>
+                    <li class="data mobile">2615125924</li>
+                    <li class="data tablet">
+                        <div>
+                            <p class="num--tablet">2612412438</p>
+                            <p>2615125924</p>
+                        </div>
+                    </li>
+                    <li class="redes mobile">Redes:</li>
+                </ul>
+                <div class="social--media">
+                    <a href="https://www.instagram.com/estudio.vym">
+                        <img src="../resources/svg/instagram.svg" alt="" />
+                    </a>
+                    <a href="https://www.facebook.com/Estudio-VyM-281310309172935">
+                        <img src="../resources/svg/facebook.svg" alt="" />
+                    </a>
+                </div>
+                <p class="rights">
+                    Vilca Y Maya Estudio Contable Y Administrativo (Todos los derechos
+                    reservados)
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="page-mask" style="visibility:hidden; opacity: 0; transition:all 300ms ease-in-out;"></div>
+</body>
+</html>

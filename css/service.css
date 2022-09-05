@@ -1,0 +1,128 @@
+:root {
+  --main-blue: hsla(218, 57%, 27%, 1);
+  --secondary-blue: hsla(216, 67%, 15%, 1);
+  --text-white: hsla(0, 0%, 100%, 1);
+}
+
+/* 
+    ================
+
+    ----- Main ----- 
+
+    ================
+*/
+
+.container-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.titles {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+ul {
+  padding: 0 0 0 2.4rem;
+  margin: 0;
+}
+
+
+/* 
+    ==================
+
+    ----- Media -----
+    ----- Tablet ----
+    
+    ==================
+*/
+
+@media only screen and (min-width: 744px) {
+  .text {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+
+  section {
+    margin: 7rem 0 0 0;
+  }
+
+  section:last-child {
+    margin-bottom: 15rem;
+  }
+}
+
+
+
+/* 
+    ==================
+
+    ----- Media -----
+    ----- Desktop ----
+    
+    ==================
+*/
+
+@media only screen and (min-width: 1024px) {
+
+  main {
+    padding: 0;
+    margin: 0;
+    padding: 0 15rem;
+    width: 100%;
+  }
+
+  .main--service {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    column-gap: 100px;
+    
+  }
+
+  .img--svg {
+    height: 14rem;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.3rem;
+    margin: 3.5rem 0 0 0;
+    padding: 0;
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 2.9rem;
+    margin: 0;
+    padding: 0;
+  }
+}

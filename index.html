@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Favicon (Icon Tab) -->
+    <link rel="icon" href="./resources/svg/logo-small.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/header-footer.css" />
+
+    <!-- Scripts -->
+    <script defer src="./scripts/index.js"></script>
+    
+    <title>Vilca & Maya</title>
+</head>
+<body>
+    <header class="header" data-page="home">
+		<nav class="navigation">
+            <a href="./index.html">
+                <div class="brand-container">
+                <img class="logo" src="./resources/svg/logo-small.svg" alt="" />
+                <div class="brand">
+                    <h1 class="brand--title">VILCA & MAYA</h1>
+                    <p class="brand--subtitle">Estudio contable y administrativo</p>
+                </div>
+            </div>
+            </a>  
+			<div class="div--menu-burguer-container" id="menu-containenr">
+				<img id="button-menu" src="./resources/svg/menu-burger.svg" alt="" />
+				<div class="div-menu-burguer" id="burguer-menu" style="visibility:hidden; opacity: 0; transition:all 300ms ease-in-out;">
+					<a href="./index.html">home</a>
+					<a href="./pages/service.html">servicios</a>
+					<a href="./pages/contact.html">contacto</a>
+				</div>
+			</div>
+            <div class="div--menu-burguer-container-desktop">
+					<a class="a--menu" href="./index.html">Home</a>
+					<a class="a--menu" href="./pages/service.html">Servicios</a>
+					<a class="a--menu" href="./pages/contact.html">Contacto</a>
+				</div>
+			</div>
+		</nav>
+
+
+        <div class="header--bottom-container">
+            <picture >
+                <source srcset="./resources/img/home-img-desktop.png" media="(min-width: 1000px)">
+                <source srcset="./resources/img/home-img-tablet.png" media="(min-width: 500px)">
+                <img src="./resources/img/home-img.png" alt="">
+            </picture>
+
+            <div class="container--background">
+                <p class="background--text">“Compromiso y precisión para tu organización”</p>
+            </div>
+
+            <div class="desktop--logo">
+                <img src="./resources/svg/logo--color--desktop.svg" alt="">
+            </div>
+
+            <div class="shadow"></div>
+
+        </div>
+    </header>
+
+
+    <main>
+        <section class="section" >
+            <div class="container">
+                <h2 class="titles">Sobre Nosotros</h2>
+            </div>
+            <p class="text">Somos profesionales con más de 7 años de experiencia en el ámbito contable, laboral, societario, impositivo y  administrativo. Estamos orientados a llevar adelante un asesoramiento integral  y  trabajar en el desarrollo de herramientas informáticas dirigidas hacia una contabilidad de gestión.</p>
+            <br/>
+            <p class="text" id="only-desktop">Nuestro objetivo es brindar un asesoramiento integral a todos los sectores de la organización, priorizando la necesidad de  información para la toma de decisiones.</p>
+        </section>
+        <section class="section section--objetivos">
+            <div class="container">
+                <h2 class="titles">Objetivo</h2>
+            </div>
+            <p class="text">Nuestro objetivo es brindar un asesoramiento integral a todos los sectores de la organización, priorizando la necesidad de información para la toma de decisiones.</p>
+        </section>
+        <section class="section">
+            <div class="container">
+                <h2 class="titles">Novedades</h2>
+            </div>
+            <p class="text">Actualmente nos encontramos trabajando en el desarrollo de aplicativos propios que brinden soporte  y faciliten a organizaciones y estudios contables en las siguientes tareas: </p>
+            <ul role="list">
+                <li>Liquidación de impositivas: IVA, Convenio Multilateral.</li>
+                <li>Confección de ajuste por inflación.</li>
+                <li>Liquidación de sueldos.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="background">
+            <div class="footer--container">
+                <div class="logo--container">
+                    <img class="logo" src="./resources/svg/logo-big.svg" alt="" />
+                </div>
+                <h3>Contacto</h3>
+                <ul role="list">
+                    <li class="email">E-mail:</liclass>
+                    <li class="data">estudiovv2312@gmail.com</li>
+                    <li class="phone">Teléfonos:</li>
+                    <li class="data mobile">2612412438</li>
+                    <li class="data mobile">2615125924</li>
+                    <li class="data tablet">
+                        <div>
+                            <p class="num--tablet">2612412438</p>
+                            <p>2615125924</p>
+                        </div>
+                    </li>
+                    <li class="redes mobile">Redes:</li>
+                </ul>
+                <div class="social--media">
+                    <a href="https://www.instagram.com/estudio.vym">
+                        <img src="./resources/svg/instagram.svg" alt="" />
+                    </a>
+                    <a href="https://www.facebook.com/Estudio-VyM-281310309172935">
+                        <img src="./resources/svg/facebook.svg" alt="" />
+                    </a>
+                </div>
+                <p class="rights">
+                    Vilca Y Maya Estudio Contable Y Administrativo (Todos los derechos
+                    reservados)
+                </p>
+            </div>
+        </div>
+    </footer>
+    <div id="page-mask" style="visibility:hidden; opacity: 0; transition:all 300ms ease-in-out;""></div>
+</body>
+</html>

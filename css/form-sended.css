@@ -1,0 +1,259 @@
+/* 
+    Structure:
+
+    * Root
+
+    * Generic styles 
+
+    * Main
+
+    * Media
+
+*/
+
+
+
+/* 
+    ================
+
+    ----- Root ----- 
+
+    ================
+*/
+
+
+
+:root {
+  /* ----- Colors ----- */
+  --main-blue: hsla(218, 57%, 27%, 1);
+  --secondary-blue: hsla(216, 67%, 15%, 1);
+  --text-white: hsla(0, 0%, 100%, 1);
+
+  /* ----- Fonts ----- */
+  --font: "Montserrat", sans-serif;
+  --letter-spacing: 0em;
+}
+
+
+
+/* 
+    ==========================
+
+    ----- Generic styles ----- 
+
+    ==========================
+*/
+
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: var(--font);
+  letter-spacing: var(--letter-spacing);
+  background-color: var(--main-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/* 
+    ================
+
+    ----- Main ----- 
+
+    ================
+*/
+
+
+
+.div--main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #ffff;
+  padding: 2.7rem 0 0 0;
+  height: 35vh;
+  width: 38vh;
+  position: absolute;
+  border-radius: 3rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.div--container-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.title--thanks {
+  font-size: 2.4rem;
+  padding: 1.5rem 0;
+}
+
+p {
+  font: var(--font);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin: 0 3rem;
+  text-align: left;
+  font-style: medium;
+  line-height: 1.8rem;
+}
+
+.div--button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.title--close {
+  display: block;
+  font: var(--font);
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: #3141b4;
+  margin: 0 2.5rem 3.5rem 0;
+}
+
+
+
+/* 
+    ==================
+
+    ----- Mobile -----
+    --- Landscape ----
+    
+    ==================
+*/
+
+
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .div--main-container {
+    height: 35vw;
+    width: 58vw;
+    overflow: visible;
+  }
+
+  .div--container-text {
+    height: fit-content;
+  }
+
+  p {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+  }
+
+  .title--thanks {
+    font-size: 2.8rem;
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .title--close {
+    font-size: 1.6rem;
+    margin: 0 2rem 1.5rem 0;
+  }
+
+  .logo {
+    min-height: 4rem;
+  }
+}
+
+
+
+/* 
+    ==================
+
+    ------ Media -----
+    ----- Tablet -----
+    
+    ==================
+*/
+
+
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .div--main-container {
+    padding: 2.7rem 0 0 0;
+    height: 50vh;
+    width: 53vh;
+  }
+
+  .div--container-text {
+    padding: 0rem 1.2rem;
+  }
+
+  p {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .title--thanks {
+    font-size: 3.2rem;
+    padding: 2rem 0 3rem 0;
+  }
+
+  .title--close {
+    font-size: 2rem;
+  }
+
+  .logo {
+    min-height: 5rem;
+  }
+}
+
+
+
+/* 
+    ==================
+
+    ------ Media -----
+    ----- Desktop ----
+    
+    ==================
+*/
+
+
+
+@media only screen and (min-width: 1024px) {
+  .div--main-container {
+    height: 70vh;
+    width: 74vh;
+  }
+
+  .div--container-text {
+    padding: 6.4rem 5.9rem;
+  }
+
+  p {
+    font-size: 2.8rem;
+    line-height: 3.4rem;
+  }
+
+  .title--thanks {
+    font-size: 3.8rem;
+    padding: 2rem 0 3rem 0;
+  }
+
+  .title--close {
+    font-size: 2.8rem;
+    margin: 0 4.5rem 4.5rem 0;
+  }
+
+  .logo {
+    min-height: 5rem;
+  }
+}

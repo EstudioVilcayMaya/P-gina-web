@@ -1,0 +1,219 @@
+/* 
+    Structure:
+
+    * Root
+
+    * generic styles
+
+    * Main
+
+    * Media query
+*/
+
+/* 
+    ================
+
+    ----- Root ----- 
+
+    ================
+*/
+
+:root {
+  /* ----- Colors ----- */
+  --main-blue: hsla(218, 57%, 27%, 1);
+  --secondary-blue: hsla(216, 67%, 15%, 1);
+  --text-white: hsla(0, 0%, 100%, 1);
+
+  /* ----- Fonts ----- */
+  --font: "Montserrat", sans-serif;
+  --letter-spacing: 0em;
+}
+
+/* 
+    ==========================
+
+    ----- Generic styles ----- 
+
+    ==========================
+*/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: var(--font);
+  letter-spacing: var(--letter-spacing);
+}
+
+main {
+  margin: 6.5rem auto 7rem;
+  padding: 0 2.5rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+nav .logo {
+  max-width: var(--header-nav-height);
+  padding-right: 2rem;
+}
+
+
+/* 
+    ================
+
+    ----- Main -----
+    
+    ================
+*/
+
+
+
+.container {
+  width: 25rem;
+  height: 5rem;
+  background-color: var(--main-blue);
+  border-radius: 2.5rem;
+  display: grid;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  padding-left: 4.2rem;
+}
+
+.titles {
+  color: var(--text-white);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.text ~ ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+
+
+/* 
+    ==================
+
+    ----- Media -----
+    ----- Tablet ----
+    
+    ==================
+*/
+
+
+
+@media only screen and (min-width: 744px) {
+  main {
+    padding: 0 6rem;
+  }
+
+  .text {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  section ul li {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+}
+
+
+
+/* 
+    ==================
+
+    ----- Media -----
+    ----- Desktop ----
+    
+    ==================
+*/
+
+
+
+@media only screen and (min-width: 1024px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70vw;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .titles {
+    line-height: 2.6rem;
+  }
+
+  section {
+    width: 50rem;
+  }
+
+  .section:first-child {
+    margin-right: 10rem;
+  }
+
+  .section:nth-child(3) {
+    margin-left: 10rem;
+  }
+
+  .section--objetivos {
+    display: none;
+  }
+
+  section ul li {
+    font-size: 2rem;
+  }
+
+  .text {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.9rem;
+  }
+
+  #only-desktop {
+    display: block;
+  }
+}
+
+@media (min-width: 744px) {
+  main ul[role="list"] {
+    /* esto sale del reset.css */
+    list-style: disc;
+    padding-left: 3rem;
+  }
+}
